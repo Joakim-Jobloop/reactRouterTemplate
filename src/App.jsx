@@ -2,21 +2,21 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { MainPage } from "./page/MainPage";
 import { SubPageOne } from "./page/SubPageOne";
+import { SubPageTwo } from "./page/SubPageTwo";
+import { Footer } from "./components/navigation/Footer";
+import { Header } from "./components/navigation/Header";
 function App() {
+  const url = "https://jsonplaceholder.typicode.com/";
   return (
     <>
       <Router>
-        <header>
-          <nav>
-            <Link to="/">Home</Link>
-            <Link to="/subPageOne">about</Link>
-          </nav>
-        </header>
+        <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/subPageOne" element={<SubPageOne />} />
+          <Route path="/subPageOne" element={<SubPageOne url={url} />} />
+          <Route path="/subPageTwo" element={<SubPageTwo url={url} />} />
         </Routes>
-        <footer>this is the footer</footer>
+        <Footer />
       </Router>
     </>
   );
