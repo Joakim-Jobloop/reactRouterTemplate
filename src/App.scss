@@ -1,0 +1,36 @@
+/* stylelint-disable scss(unknownAtRules) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$mm:375px;
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+.page-padding {
+@apply px-4;
+
+@media (min-width: $mm){
+    @apply px-6;
+}
+@media (min-width: $sm){
+    @apply px-10;
+}
+@media (min-width: $md){
+    @apply px-12;
+}
+@media (min-width: $lg){
+    @apply px-16;
+}
+@media (min-width: $xl) {
+    @apply px-20;
+  }
+
+  @media (min-width: $xxl) {
+    @apply px-24;
+  }
+}
