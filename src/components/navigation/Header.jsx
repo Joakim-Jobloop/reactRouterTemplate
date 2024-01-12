@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="bg-slate-800">
-      <nav className="flex gap-4 p-8 justify-end text-white">
+    <header className="bg-slate-800 page-padding">
+      <nav className="flex items-center justify-end h-20 gap-4 text-white">
         <Link to="/">Home</Link>
-        <Link to="/subPageOne">SubpageOne</Link>
-        <Link to="/subPageTwo">SubpageTwo</Link>
+        <Link to="/posts">Posts</Link>
+        <Link to="/albums">Albums</Link>
       </nav>
     </header>
   );

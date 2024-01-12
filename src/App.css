@@ -1,3 +1,37 @@
-main {
-    color: rgba(128, 128, 128, 0.488)
+/* stylelint-disable scss(unknownAtRules) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.page-padding {
+  @apply px-4;
 }
+@media (min-width: 375px) {
+  .page-padding {
+    @apply px-6;
+  }
+}
+@media (min-width: 640px) {
+  .page-padding {
+    @apply px-10;
+  }
+}
+@media (min-width: 768px) {
+  .page-padding {
+    @apply px-12;
+  }
+}
+@media (min-width: 1024px) {
+  .page-padding {
+    @apply px-16;
+  }
+}
+@media (min-width: 1280px) {
+  .page-padding {
+    @apply px-20;
+  }
+}
+@media (min-width: 1536px) {
+  .page-padding {
+    @apply px-24;
+  }
+}/*# sourceMappingURL=App.css.map */

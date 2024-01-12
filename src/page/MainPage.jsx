@@ -1,3 +1,9 @@
+import { PageLayout } from "../components/utils/PageLayout";
+
 export const MainPage = () => {
-  return <h1>This is the main page where the landingpage should be shown</h1>;
+  return (
+    <PageLayout>
+      <h1>This is the main page where the landingpage should be shown</h1>
+    </PageLayout>
+  );
 };
